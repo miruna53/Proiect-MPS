@@ -1,0 +1,17 @@
+Minuta 4 - 08.11.2022
+
+Absenti: nicio persoana
+Scop: brainstorming implementare proiect
+Platforma: fizic, Lab
+
+Toti membrii echipei au venit cu intrebari pentru Iulia legate de proiect. Dupa ce am terminat laboratorul, i-am adresat intrebarile pentru a incerca sa
+clarificam tot pentru a putea incepe implementarea.
+
+Ce am inteles:
+Trebuie sa implementam un arbore operational. Frunzele arborelui sunt cele 15 valori de threshold, nodurile de mai sus reprezinta operatii prin care trec frunzele
+si rezultatele operatiilor acelora and so on.
+Root-ul arborelui trebuie sa fie un threshold care are F-measure-ul cat mai apropiat de F-measure-ul threshold-ului ideal.
+Nodurile reprezinta 'functii' care primesc ca input 'copiii' lor, si trimit ca output mai sus in arbore.
+Stim f-measure-ul pentru fiecare din cele 15 threshold-uri - fmeasure_struct[floor(threshold * 255)]
+Trebuie sa scriem functii la intamplare - care sa faca medie/adunari/impartiri/sa indepartam outliere/whatever
+Print Monte carlo trebuie sa creem arbori random din functiile pe care le avem
