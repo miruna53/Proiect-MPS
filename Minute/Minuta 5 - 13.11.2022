@@ -1,6 +1,6 @@
 Minuta 5 - 13.11.2022
 
-Absenti: Tibi
+Absenti: nimeni
 Scop: sa vedem ce research a facut fiecare individual
 Platforma: Google meets
 
@@ -10,3 +10,6 @@ Ana Grigorescu si Andrei Caraiman: au cautat si gasit cateva articole stiintific
 research-ului) pe care restul membrilor sa le citeasca pentru documentatie.
 Miruna Paun: a gasit cateva tutoriale si articole despre arborii programatici (ce sunt si cum functioneaza).
 Ana Rarinca:
+
+La un moment dat Ana Rarinca a iesit si Tiberiu Georgescu s-a alaturat. Am reusit sa facem parsarea CSV-urilor si am calculat si media threashold-urilor si
+"our_f_measure" (am inmultit media threashold-urilor cu 255), f_measure error si media erorii.
