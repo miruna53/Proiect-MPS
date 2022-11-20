@@ -33,11 +33,7 @@ def parse_file(file):
                 thresholds = [float(num) for num in convert(line[0])]
                 optimal_threshold = thresholds[0]
                 thresholds = thresholds[1:]
-                print("Thresholds: ", thresholds, '\n')
             if i == 1:
                 f_measures = [float(num) for num in convert(line[0])]
-                print("F-measures: ", f_measures, '\n')
-
-    print("Optimal threshold: ", optimal_threshold)
 
     return File(thresholds, optimal_threshold, f_measures)
