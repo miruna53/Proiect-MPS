@@ -4,12 +4,15 @@ import os
 import glob
 import csv
 from file import *
-def getFiles():
+
+
+def get_files():
     path = os.getcwd()
     path += '\..\..\data\global-data'
     print(path)
 
     return glob.glob(os.path.join(path, "*.csv"))
+
 
 def convert(string):
     li = string.split(",")
@@ -19,10 +22,9 @@ def convert(string):
 
     return li
 
-def parseFile(file):
+
+def parse_file(file):
     optimal_threshold = 0
-    #thresholds = []
-    #f_measures = []
 
     with open(file, "r") as f:
         reader = csv.reader(f, delimiter="\t")
@@ -39,7 +41,3 @@ def parseFile(file):
     print("Optimal threshold: ", optimal_threshold)
 
     return File(thresholds, optimal_threshold, f_measures)
-
-# print(len(getFiles()))
-# for file in getFiles():
-#     parseFile(file)
