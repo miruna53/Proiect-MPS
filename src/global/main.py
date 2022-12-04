@@ -181,17 +181,19 @@ def main():
     print("no of validation files: ", len(validation_files))
     print("no of test files: ", len(test_files))
 
-    no_of_generated_trees = [10, 100, 1000, 10000]
+    no_of_generated_trees = [10, 100, 1000, 10000, 100000]
     mean_errors = []
     for no in no_of_generated_trees:
         mean_errors.append(apply_data_sets(training_files, validation_files, test_files, no))
 
     print(mean_errors)
 
-    plt.plot(no_of_generated_trees, mean_errors)
+    plt.scatter(no_of_generated_trees, mean_errors)
     plt.xlabel("Number of Generated Trees")
     plt.ylabel("Mean Error for Best Tree")
 
+    plt.xscale('log')
+    plt.grid()
     plt.show()
 
 
