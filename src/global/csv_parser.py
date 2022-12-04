@@ -17,7 +17,7 @@ def get_files():
 def convert(string):
     li = string.split(",")
 
-    while ("" in li):
+    while "" in li:
         li.remove("")
 
     return li
