@@ -152,7 +152,9 @@ def apply_data_sets(training_files, validation_files, test_files, no_of_orders_g
 
     print("mean error: ", mean_error)
 
-    return mean_error
+    best_order.append(mean_error)
+
+    return best_order
 
 
 def main():
@@ -181,10 +183,12 @@ def main():
     print("no of validation files: ", len(validation_files))
     print("no of test files: ", len(test_files))
 
-    no_of_generated_trees = [10, 100, 1000, 10000, 100000]
+    no_of_generated_trees = [10, 100, 1000, 10000]
     mean_errors = []
     for no in no_of_generated_trees:
-        mean_errors.append(apply_data_sets(training_files, validation_files, test_files, no))
+        best_order = apply_data_sets(training_files, validation_files, test_files, no)
+        mean_errors.append(best_order.pop())
+        print("best order for ", no, " generated trees: ", best_order)
 
     print(mean_errors)
 
