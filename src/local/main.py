@@ -1,5 +1,5 @@
 from csv_local_parser import *
-from Local_file import *
+from local_file import *
 
 def main():
     files = []

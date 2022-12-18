@@ -1,7 +1,7 @@
 import os
 import glob
 import csv
-from Local_file import *
+from local_file import *
 
 
 def get_files():
@@ -22,4 +22,4 @@ def parse_file(file):
                               wolf_th = row[8], phansalkar_th = row[9], nick_th = row[10], gaussian_th = row[11])
             list_per_file.append(dictionary_row)
         print(list_per_file)
-    return Local_file(list_per_file)
+    return local_file(list_per_file)
