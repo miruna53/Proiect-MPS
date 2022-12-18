@@ -1,5 +1,5 @@
 
-class local_file:
+class LocalFile:
 
     def __init__(self, pixel_list):
         self.pixel = pixel_list

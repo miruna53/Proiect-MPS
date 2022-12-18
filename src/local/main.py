@@ -1,5 +1,6 @@
 from csv_local_parser import *
-from local_file import *
+from LocalFile import *
+
 
 def main():
     files = []
@@ -7,7 +8,8 @@ def main():
     for csv_file in get_files():
         files.append(parse_file(csv_file))
 
-    print(files)
+    print(files[1])
+
 
 if __name__ == "__main__":
     main()
