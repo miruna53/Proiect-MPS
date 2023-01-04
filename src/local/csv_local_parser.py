@@ -18,7 +18,7 @@ def parse_file(file):
         reader = csv.reader(f, delimiter=",")
         list_per_file = []
         for row in reader:
-            pixel = Pixel(float(row[0]), 1 - float(row[1]), [eval(i) for i in row[2:11]])
+            pixel = Pixel(float(row[0]), 1 - float(row[1]), [eval(i) for i in row[2:12]])
             list_per_file.append(pixel)
 
     return LocalFile(list_per_file)
